@@ -25,6 +25,7 @@ const close = () => emit('close')
     <div class="w-full relative z-10 p-20px box-border">
       <Loading v-if="loading" />
       <RoundedButton
+        :label="t.modal_accessibility"
         wrapper-class="absolute top-10px right-10px z-100"
         icon="dashicons-no-alt" 
         @action="close" />
