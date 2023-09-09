@@ -1,0 +1,190 @@
+# Copyright (C) 2023 mateusavila
+# This file is distributed under the same license as the Mateus Ávila Isidoro plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Mateus Ávila Isidoro 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/language-"
+"mateus\n"
+"POT-Creation-Date: 2023-09-08T23:29:41+00:00\n"
+"PO-Revision-Date: 2023-09-08 22:36-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.2\n"
+"X-Domain: language-mateus\n"
+
+#. Plugin Name of the plugin
+msgid "Mateus Ávila Isidoro"
+msgstr "Mateus Ávila Isidoro"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.mateusavila.com.br/"
+msgstr "https://www.mateusavila.com.br/"
+
+#. Description of the plugin
+msgid ""
+"This is the test for me, Mateus Ávila Isidoro, to be available to work in "
+"Awesome Motive."
+msgstr ""
+"Este é um teste para mim, Mateus Ávila Isidoro, para trabalhar na Awesome "
+"Motive."
+
+#. Author of the plugin
+msgid "mateusavila"
+msgstr "mateusavila"
+
+#. The 'human_date_format' field must be a boolean.
+msgid "The 'human_date_format' field must be a boolean."
+msgstr "O campo ‘human_date_format’ precisa ser um boleado."
+
+#. The 'rows' field must be between 1 and 5.
+msgid "The 'rows' field must be between 1 and 5."
+msgstr "O campo ‘rows’ precisa ser um número de 1 a 5."
+
+#. At least one email address is required.
+msgid "At least one email address is required."
+msgstr "Ao menos um e-mail é obrigatório."
+
+#. Invalid email(s) found in the list.
+msgid "Invalid email(s) found in the list."
+msgstr "E-mails inválidos encontrados na lista."
+
+#. The form has been successfully updated.
+msgid "The form has been successfully updated."
+msgstr "O formulário foi corretamente atualizado."
+
+#. Please activate JavaScript for an enhanced experience.
+msgid "Please activate JavaScript for an enhanced experience."
+msgstr "Por favor, ative o Javascript para uma melhor experiência."
+
+#. Home
+msgid "Home"
+msgstr "Home"
+
+#. Graphic
+msgid "Graphic"
+msgstr "Gráficos"
+
+#. Settings
+msgid "Settings"
+msgstr "Configurações"
+
+#. home
+msgid "home"
+msgstr "home"
+
+#. graphic
+msgid "graphic"
+msgstr "gráfico"
+
+#. settings
+msgid "settings"
+msgstr "configurações"
+
+#. header_component_paragraph
+msgid "header_component_paragraph"
+msgstr ""
+"Este plugin servirá como teste para um potencial emprego na Awesome "
+"Motive."
+
+#. modal_title
+msgid "modal_title"
+msgstr "Sucesso!"
+
+#. modal_submit
+msgid "modal_submit"
+msgstr "Fechar"
+
+#. modal_paragraph
+msgid "modal_paragraph"
+msgstr "Seus dados foram salvos!"
+
+#. form_paragraph
+msgid "form_paragraph"
+msgstr "Gerencie as configurações do seu plugin."
+
+#. form_label_rows
+msgid "form_label_rows"
+msgstr "Número de linhas visíveis na tabela."
+
+#. form_label_rows_helper
+msgid "form_label_rows_helper"
+msgstr "(1 a 5)"
+
+#. form_label_date
+msgid "form_label_date"
+msgstr "Data amigável a humanos"
+
+#. form_label_emails
+msgid "form_label_emails"
+msgstr "Lista de e-mails"
+
+#. form_save
+msgid "form_save"
+msgstr "Salvar"
+
+#. graph_paragraph
+msgid "graph_paragraph"
+msgstr ""
+"Este gráfico ilustra a quantidade de acessos que nossa página teve neste "
+"período."
+
+#. home_paragraph
+msgid "home_paragraph"
+msgstr "Olhe as nossas páginas principais."
+
+#. home_table_id
+msgid "home_table_id"
+msgstr "ID"
+
+#. home_table_url
+msgid "home_table_url"
+msgstr "Url"
+
+#. home_table_title
+msgid "home_table_title"
+msgstr "Título"
+
+#. home_table_pageviews
+msgid "home_table_pageviews"
+msgstr "Visualizações"
+
+#. home_table_date
+msgid "home_table_date"
+msgstr "Data"
+
+#. home_emails
+msgid "home_emails"
+msgstr "E-mails"
+
+#. home_emails_paragraphs
+msgid "home_emails_paragraphs"
+msgstr "Esta é a lista dos responsáveis pela manutenção deste plugin."
+
+#. form_error_no_duplicates
+msgid "form_error_no_duplicates"
+msgstr "Há e-mails duplicados na lista. Por favor corrija."
+
+#. form_error_email
+msgid "form_error_email"
+msgstr "Precisa ser um e-mail válido"
+
+#. form_error_rows_min
+msgid "form_error_rows_min"
+msgstr "Digite um número maior e igual a 1"
+
+#. form_error_rows_max
+msgid "form_error_rows_max"
+msgstr "Digite um número menor e igual a 5"
+
+#. form_error_rows_string
+msgid "form_error_rows_string"
+msgstr "Este campo é obrigatório"
+
+#. form_date_activate
+msgid "form_date_activate"
+msgstr "Ativar"
