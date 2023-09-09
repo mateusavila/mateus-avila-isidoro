@@ -11,7 +11,6 @@ This plugin is part of the application process to work with Awesome Motive.
 
 **Back-end:** Wordpress, using: WP Rest API, transients, options, translations.
 
-
 ## Functionalities
 
 ### API
@@ -44,6 +43,7 @@ This plugin is part of the application process to work with Awesome Motive.
 - [x]  The "Minus" button is disabled when the list contains only one email.
 - [x]  Sanitized the human_date_format and rows values.
 - [x]  The user's email is shared between WP and Vue.
+- [x]  WAI-ARIA principles applied in the form, to increase accessibility
 
 ### Graphic page
 
@@ -57,7 +57,6 @@ This plugin is part of the application process to work with Awesome Motive.
 - [x]  Translated the table header to enhance the user experience.
 - [x]  Listed all emails in an unordered list.
 
-
 ### Extras
 
 - [x]  Created composables to enhance code quality.
@@ -65,6 +64,7 @@ This plugin is part of the application process to work with Awesome Motive.
 - [x]  Utilized HTML5 Dialog in the modal, which can be cancelled with the Escape button.
 - [x]  Typed all props and emits in components.
 - [x]  Typed the translation as well.
+
 ## Contribute
 
 Clone the repository
