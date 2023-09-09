@@ -77,7 +77,7 @@ function load_page_vue($content) {
 HERED;
   $current_user = wp_get_current_user();
   $nonceBox = "<script>
-    const globalURL = \"".get_site_url()."/wp-json/mateus-avila-isidoro\";
+    const globalURL = \"".get_rest_url()."mateus-avila-isidoro\";
     const emailUser = \"".$current_user->user_email."\";
   </script>";
 
