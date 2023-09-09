@@ -6,7 +6,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/language-"
 "mateus\n"
 "POT-Creation-Date: 2023-09-08T23:29:41+00:00\n"
-"PO-Revision-Date: 2023-09-08 22:39-0300\n"
+"PO-Revision-Date: 2023-09-09 12:02-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -188,3 +188,19 @@ msgstr "This field is required."
 #. form_date_activate
 msgid "form_date_activate"
 msgstr "Activate"
+
+#. form_accessibility
+msgid "form_accessibility"
+msgstr "Send form"
+
+#. modal_accessibility
+msgid "modal_accessibility"
+msgstr "Close dialog box"
+
+#. form_plus
+msgid "form_plus"
+msgstr "Add e-mail"
+
+#. form_minus
+msgid "form_minus"
+msgstr "Remove e-mail"

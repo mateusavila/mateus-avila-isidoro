@@ -48,7 +48,7 @@ const { register, errors, handleSubmit } = useForm<Omit<PluginSettings, 'loaded'
   },
   validate: zodResolver(
     z.object({
-      rows: z.number().min(1, t.form_error_rows_min).max(5, t.form_error_rows_max),
+      rows: z.coerce.number().min(1, t.form_error_rows_min).max(5, t.form_error_rows_max),
       human_date_format: z.boolean(),
       emails: z.array(
         z.object({
@@ -193,10 +193,15 @@ watch(() => dataDB.value, (d) => {
                 data-maska-tokens="{ 'Z': { 'pattern': '[1-5]' }}"
                 id="rows"
                 v-model="rows"
+                required
+                aria-required="true"
                 v-bind="rowsAttrs"
+                :aria-invalid="!!(errors.rows)"
+                aria-errormessage="rows-error-box"
                 class="w-full h-40px"
                 :class="{ 'important-bd-1-#F15757': errors.rows }">
               <ErrorBox 
+                id="rows-error-box"
                 :show-error="!!errors.rows"
                 :error="errors.rows ?? ''" />
             </div>
@@ -223,26 +228,34 @@ watch(() => dataDB.value, (d) => {
                   type="text"
                   :id="`item-${index}`"
                   name="email"
+                  required
+                  aria-required="true"
                   v-model="field.value.email"
                   v-bind="field.attrs"
                   :placeholder="`E-mail ${index + 1}`"
+                  :aria-errormessage="`item-error-${index}`"
                   class="w-full h-40px"
+                  :aria-invalid="!!(field && field.error && field.error.email)"
                   :class="{ 'important-bd-1-#F15757': field && field.error && field.error.email }">
-                <ErrorBox 
+                <ErrorBox
+                  :id="`item-error-${index}`"
                   :show-error="!!(field && field.error && field.error.email)"
                   :error="(field && field.error && field.error.email) ?? ''" />
               </div>
               <div class="w-full">
                 <ErrorBox 
+                  id="no-duplicates"
                   :show-error="hasDuplicates"
                   :error="t.form_error_no_duplicates" />
               </div>
               <div class="flex gap-10px justify-center">
                 <RoundedButton
+                  :label="t.form_plus"
                   :disabled="fields.length === 5"
                   icon="dashicons-plus" 
                   @action="appendData" />
                 <RoundedButton 
+                  :label="t.form_minus"
                   :disabled="fields.length === 1"
                   icon="dashicons-minus" 
                   @action="removeData()" />
@@ -251,13 +264,13 @@ watch(() => dataDB.value, (d) => {
           </div>
         </div>
         <div class="w-full mt-20px">
-          <button type="submit" class="button button-primary">{{ t.form_save }}</button>
+          <button type="submit" class="button button-primary" :aria-label="t.form_accessibility">{{ t.form_save }}</button>
         </div>
       </form>
     </div>
     <Modal
       id="modal" 
       :loading="loading"
-      @close="closeModal('modal')"></Modal>
+      @close="closeModal('modal')" />
   </div>
 </template>

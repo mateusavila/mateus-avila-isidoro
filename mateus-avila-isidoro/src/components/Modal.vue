@@ -30,7 +30,7 @@ const close = () => emit('close')
         @action="close" />
       <h2 class="box-border m-0-0-10 flex items-center gap-6px"><span class="dashicons dashicons-star-filled"></span> {{ t.modal_title }}</h2>
       <p class="box-border">{{ t.modal_paragraph }}</p>
-      <button type="button" class="button button-primary" @click="close">{{ t.modal_submit }}</button>
+      <button type="button" class="button button-primary" @click="close" :aria-label="t.modal_accessibility">{{ t.modal_submit }}</button>
     </div>
     <slot />
   </dialog>

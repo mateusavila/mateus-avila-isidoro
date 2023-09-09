@@ -6,7 +6,7 @@ const t: TranslationWP = languages[0]
 </script>
 
 <template>
-  <div class="w-full flex p-0-20 m-20-0 gap-5px justify-between flex-wrap items-center h-60px">
+  <div class="w-full flex p-0-20 m-20-0 gap-5px justify-between flex-wrap items-center h-60px" role="region" aria-label="Header">
     <span class="dashicons dashicons-awards text-60px w-60px h-60px"></span>
     <div class="wc-100-65">
       <h1 class="m-0 important-p-0-0-5">Mateus Ávila Isidoro</h1>

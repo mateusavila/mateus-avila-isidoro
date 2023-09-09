@@ -28,4 +28,8 @@ $languages_list = array(
   'form_error_rows_max' => __('form_error_rows_max', 'mateus-avila-isidoro'),
   'form_error_rows_string' => __('form_error_rows_string', 'mateus-avila-isidoro'),
   'form_date_activate' => __('form_date_activate', 'mateus-avila-isidoro'),
+  'form_accessibility' => __('form_accessibility', 'mateus-avila-isidoro'),
+  'form_plus' => __('form_plus', 'mateus-avila-isidoro'),
+  'form_minus' => __('form_minus', 'mateus-avila-isidoro'),
+  'modal_accessibility' => __('modal_accessibility', 'mateus-avila-isidoro'),
 );

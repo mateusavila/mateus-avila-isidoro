@@ -78,4 +78,8 @@ export interface TranslationWP {
   form_error_rows_max: string
   form_error_rows_string: string
   form_date_activate: string
+  modal_accessibility: string
+  form_accessibility: string
+  form_plus: string
+  form_minus: string
 }
