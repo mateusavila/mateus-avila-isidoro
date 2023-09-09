@@ -53,6 +53,6 @@ const data = ref<GraphBarInterface>({
 
 <template>
   <div class="w-full bdt-1-#cccccc bdb-1-#cccccc bg-#ffffff" role="figure">
-    <Bar :options="options" :data="data" />
+    <Bar :options="options" :data="data" :height="350" />
   </div>
 </template>

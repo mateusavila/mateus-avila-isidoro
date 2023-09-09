@@ -33,7 +33,6 @@ onMounted(async () => {
           loaded: true
         }
         settings.setData(body)
-        pending.value = false
       }
     })
   }
@@ -73,7 +72,7 @@ onMounted(async () => {
       <Loading v-if="pending" />
       <div class="w-full m-20-0 box-border relative">
         <table 
-          v-if="!pending && dataStore" 
+          v-if="!pending && dataStore && dataStore?.data?.table?.data?.rows" 
           class="important-box-border important-w-full important-max-w-full wp-list-table widefat striped table-view-list">
           <thead v-if="dataStore?.data?.table?.data">
             <tr>

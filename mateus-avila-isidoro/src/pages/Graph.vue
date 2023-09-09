@@ -60,10 +60,12 @@ onMounted(async () => {
   <div class="w-full p-20px">
     <h2>{{ toCapitalize(t.graphic) }}</h2>
     <p>{{ t.graph_paragraph }}</p>
-    <Loading v-if="pending" />
-    <Graphic 
-      v-if="!pending && dataStore.data.graph"
-      :external-data="dataStore.data.graph" 
-      :human-date-format="settings.human_date_format" />
+    <div class="relative w-full mt-20px min-h-300px">
+      <Loading v-if="pending" />
+      <Graphic 
+        v-if="!pending && dataStore.data.graph"
+        :external-data="dataStore.data.graph" 
+        :human-date-format="settings.human_date_format" />
+    </div>
   </div>
 </template>
